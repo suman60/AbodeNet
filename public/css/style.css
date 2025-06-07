@@ -1,0 +1,152 @@
+body{
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.container{
+   flex: 1 ;
+}
+ /* Navbar */
+ .navbar{
+    height: 5rem;
+    background-color: white;
+ }
+ .fa-compass{
+    color: #fe424d;
+    font-size: 2rem;
+ }
+ .nav-link{
+    color: #222222 !important;
+ }
+ /* footer */
+ .f-info-links a{
+    text-decoration: none;
+    color: #222222;
+ }
+ .f-info-links a:hover{
+    text-decoration: underline;
+ }
+ .f-info{
+    height: 8rem;
+    background-color: #ebebeb;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:space-evenly;
+    text-align: center;
+ }
+ .f-info-links, .f-info-socials, .f-info-brand {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ 
+ .f-info-socials i{
+    margin-right: 1rem;
+    font-size: 1.2rem;
+ }
+
+ .listing-card {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fff;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  height: 98%;
+}
+
+.listing-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.25);
+}
+
+.listing-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-bottom: 1px solid #eee;
+  transition: transform 0.4s ease;
+}
+
+.listing-card:hover img {
+  transform: scale(1.05);
+}
+
+.card-body {
+  padding: 1rem 1.2rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-text {
+  font-family: 'Poppins', sans-serif;
+  color: #222;
+  font-size: 1rem;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.card-text b {
+  font-size: 1.25rem;
+  color: #2a2a72; /* Deep blue */
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.tax-info {
+  font-size: 0.85rem;
+  color: #666;
+  font-style: italic;
+  margin-left: 8px;
+}
+
+.listing-card .card-img-overlay {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  color: white;
+  /* you can add badges or icons here if needed */
+}
+
+.listing-link {
+  text-decoration: none;
+  color: inherit; /* keep text color consistent */
+}
+.listing-link:hover {
+  text-decoration: none;
+  color: inherit;
+}
+ /* New page */
+ .add-btn{
+   background-color: #fe424d  !important;
+   border: none !important;
+ }
+ /* edit pag */
+ .edit-btn{
+   background-color: #fe424d  !important;
+   border: none !important;
+ }
+ /* show page */
+ .show-image{
+   height: 30vh;
+ }
+ .btns{
+   display: flex;
+ }
+ .show-card{
+   padding-left: 0;
+   padding-right: 0;
+ }
+
+ /* map */
+ #map{
+   height: 400px;
+   width: 100%;
+ }

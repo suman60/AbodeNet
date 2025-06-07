@@ -1,0 +1,60 @@
+<% layout("/layouts/boilerplate") %>
+<h3>Create a new listing</h3>
+<div class="row">
+    <div class="col-8 offset-2">
+        <form action="/listings" method="post" novalidate class="needs-validation" enctype="multipart/form-data"><br><br>
+            <div class="mb-3">
+                <label for="title" class="form-label">Title</label>
+                <input type="text" id="title" name="listing[title]" placeholder="Add a Catchy title" class="form-control" required>
+                <div class="valid-feedback">
+                    Title Looks Good
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="description" class="form-label">Description</label>
+                <textarea id="description" name="listing[description]" class="form-control" placeholder="Enter description" required></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="category" class="form-label">Category</label>
+                <select id="category" name="listing[category]" class="form-select" required>
+                    <option value="" selected disabled>Select category</option>
+                    <option value="IconicCities">Iconic Cities</option>
+                    <option value="Mountains">Mountains</option>
+                    <option value="Castles">Castles</option>
+                    <option value="AmazingPool">Amazing Pool</option>
+                    <option value="Camping">Camping</option>
+                    <option value="Farms">Farms</option>
+                    <option value="Arctic">Arctic</option>
+                    <option value="Trending">Trending</option>
+                </select>
+                <div class="invalid-feedback">
+                    Please select a category.
+                </div>
+            </div>
+             <div class="mb-3">
+                <label for="image" class="form-label">Upload Image</label>
+                <input type="file" id="image" name="listing[image]" class="form-control" required>
+                
+            </div>
+            <div class="row">
+                 <div class="mb-3 col-md-4">
+                    <label for="price" class="form-label">Price</label>
+                    <input  id="price" name="listing[price]" placeholder="1200" class="form-control" required>
+                </div>
+                <div class="mb-3 col-md-8">
+                    <label for="country" class="form-label">Country</label>
+                    <input type="text" id="country" name="listing[country]" placeholder="Bangladesh" class="form-control" required>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="location" class="form-label">Location</label>
+                <input type="text" id="location" name="listing[location]" placeholder="Dhaka, Bangladesh" class="form-control" required>
+            </div>
+
+            <button type="submit" class="btn btn-dark add-btn">Add</button>
+        </form>
+    </div>
+   
+</div>
